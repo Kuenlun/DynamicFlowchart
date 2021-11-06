@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\KDF\Log.h" />
     <ClInclude Include="src\KDF\Application.h" />
     <ClInclude Include="src\KDF\Core.h" />
     <ClInclude Include="src\KDF.h" />
     <ClInclude Include="src\KDF\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\KDF\Log.cpp" />
     <ClCompile Include="src\KDF\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -68,6 +70,7 @@
       <PreprocessorDefinitions>KDF_PLATFORM_WINDOWS;KDF_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\DynamicFlowchart\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

@@ -1,0 +1,3 @@
+[submodule "DynamicFlowchart/vendor/spdlog"]
+	path = DynamicFlowchart/vendor/spdlog
+	url = https://github.com/gabime/spdlog

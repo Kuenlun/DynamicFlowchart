@@ -27,9 +27,15 @@
     <ClInclude Include="src\KDF\EntryPoint.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="src\KDF\Log.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDF\Log.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
