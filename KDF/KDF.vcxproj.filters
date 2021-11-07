@@ -4,6 +4,9 @@
     <Filter Include="KDF">
       <UniqueIdentifier>{FAFA870B-6604-887C-EF7F-9E7C5B88937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="KDF\Events">
+      <UniqueIdentifier>{9E494ABB-8A01-8C08-F308-6564DFDF26F9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\KDF.h" />
@@ -15,6 +18,15 @@
     </ClInclude>
     <ClInclude Include="src\KDF\EntryPoint.h">
       <Filter>KDF</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDF\Events\ApplicationEvent.h">
+      <Filter>KDF\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDF\Events\Event.h">
+      <Filter>KDF\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDF\Events\KeyEvent.h">
+      <Filter>KDF\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\KDF\Log.h">
       <Filter>KDF</Filter>
