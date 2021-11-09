@@ -150,6 +150,7 @@
     <ClInclude Include="src\KDF\Events\ApplicationEvent.h" />
     <ClInclude Include="src\KDF\Events\Event.h" />
     <ClInclude Include="src\KDF\Events\KeyEvent.h" />
+    <ClInclude Include="src\KDF\Events\MouseEvent.h" />
     <ClInclude Include="src\KDF\Log.h" />
   </ItemGroup>
   <ItemGroup>

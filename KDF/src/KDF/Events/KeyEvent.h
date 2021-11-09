@@ -5,6 +5,7 @@
 #include <sstream>
 
 namespace KDF {
+
 	class KDF_API KeyEvent : public Event
 	{
 	public:
@@ -25,11 +26,11 @@ namespace KDF {
 	{
 	public:
 		KeyPressedEvent(int keycode, int repeatCount)
-			: KeyE$vent(keycode), m_RepeatCount(repeatCount)
+			: KeyEvent(keycode), m_RepeatCount(repeatCount)
 		{
 		}
 
-		inline int GetRepeatCount() const { return m_RepeatCount }
+		inline int GetRepeatCount() const { return m_RepeatCount; }
 
 		std::string ToString() const override
 		{
@@ -38,7 +39,7 @@ namespace KDF {
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(KeyPressed);
+		EVENT_CLASS_TYPE(KeyPressed)
 	private:
 		int m_RepeatCount;
 	};
@@ -48,7 +49,7 @@ namespace KDF {
 	{
 	public:
 		KeyReleasedEvent(int keycode)
-			: KeyE$vent(keycode)
+			: KeyEvent(keycode)
 		{
 		}
 
@@ -59,6 +60,7 @@ namespace KDF {
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(KeyReleased);
+		EVENT_CLASS_TYPE(KeyReleased)
 	};
+
 }

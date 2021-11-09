@@ -7,12 +7,12 @@ extern KDF::Application* KDF::CreateApplication();
 int main(int argc, char** argv)
 {
 	KDF::Log::Init();
-	LOG_CORE_TRACE("Initialized Log");
-	LOG_CORE_DEBUG("Initialized Log");
-	LOG_CORE_INFO("Initialized Log");
-	LOG_CORE_WARN("Initialized Log");
-	LOG_CORE_ERROR("Initialized Log");
-	LOG_CORE_FATAL("Initialized Log");
+	CORE_LOG_TRACE("Initialized Log");
+	CORE_LOG_DEBUG("Initialized Log");
+	CORE_LOG_INFO("Initialized Log");
+	CORE_LOG_WARN("Initialized Log");
+	CORE_LOG_ERROR("Initialized Log");
+	CORE_LOG_FATAL("Initialized Log");
 
 	LOG_TRACE("Initialized Log");
 	LOG_DEBUG("Initialized Log");

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "memory"
+#include <memory>
 
 #include "core.h"
 #include "spdlog/spdlog.h"
@@ -24,12 +24,12 @@ namespace KDF
 
 
 // Core log macros
-#define LOG_CORE_TRACE(...) ::KDF::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define LOG_CORE_DEBUG(...) ::KDF::Log::GetCoreLogger()->debug(__VA_ARGS__)
-#define LOG_CORE_INFO(...)  ::KDF::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define LOG_CORE_WARN(...)  ::KDF::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define LOG_CORE_ERROR(...) ::KDF::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define LOG_CORE_FATAL(...) ::KDF::Log::GetCoreLogger()->critical(__VA_ARGS__)
+#define CORE_LOG_TRACE(...) ::KDF::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define CORE_LOG_DEBUG(...) ::KDF::Log::GetCoreLogger()->debug(__VA_ARGS__)
+#define CORE_LOG_INFO(...)  ::KDF::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define CORE_LOG_WARN(...)  ::KDF::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define CORE_LOG_ERROR(...) ::KDF::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define CORE_LOG_FATAL(...) ::KDF::Log::GetCoreLogger()->critical(__VA_ARGS__)
 // Client log macros
 #define LOG_TRACE(...)      ::KDF::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define LOG_DEBUG(...)      ::KDF::Log::GetClientLogger()->debug(__VA_ARGS__)
