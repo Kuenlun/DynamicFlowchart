@@ -158,8 +158,8 @@
     <ClInclude Include="src\KDF\Events\KeyEvent.h" />
     <ClInclude Include="src\KDF\Events\MouseEvent.h" />
     <ClInclude Include="src\KDF\Log.h" />
-    <ClInclude Include="src\KDFpch.h" />
     <ClInclude Include="src\KDF\Window.h" />
+    <ClInclude Include="src\KDFpch.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>

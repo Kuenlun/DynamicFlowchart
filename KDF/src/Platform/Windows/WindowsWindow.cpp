@@ -20,7 +20,7 @@ namespace KDF {
 	{
 	}
 
-	void WindowsWindow::Init(const WindowsProps& props)
+	void WindowsWindow::Init(const WindowProps& props)
 	{
 		m_data.Title = props.Title;
 		m_data.Width = props.Width;
