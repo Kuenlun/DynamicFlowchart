@@ -1,3 +1,4 @@
+#include "KDFpch.h"
 #include "KDF/Events/ApplicationEvent.h"
 #include "KDF/Log.h"
 
@@ -8,6 +9,7 @@ namespace KDF
 {
 	Application::Application()
 	{
+		m_window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -16,9 +18,8 @@ namespace KDF
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		LOG_TRACE(e);
-
-		while (true);
+		while (m_running) {
+			m_window->OnUpdate();
+		}
 	}
 }

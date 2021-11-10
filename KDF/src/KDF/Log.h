@@ -1,8 +1,6 @@
 #pragma once
 
-#include <memory>
-
-#include "core.h"
+#include "KDF/Core.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 

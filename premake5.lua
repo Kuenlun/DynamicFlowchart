@@ -10,7 +10,14 @@ workspace "DynamicFlowchart"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "KDF/vendor/GLFW/include"
+
 startproject "Sandbox"
+
+
+include "KDF/vendor/GLFW"
 
 project "KDF"
 	location "KDF"
@@ -19,6 +26,9 @@ project "KDF"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "KDFpch.h"
+	pchsource "KDF/src/KDFpch.cpp"
 
 	files
 	{
@@ -29,7 +39,14 @@ project "KDF"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

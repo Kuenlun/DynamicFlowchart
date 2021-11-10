@@ -1,6 +1,4 @@
 #pragma once
-#include <string>
-#include <functional>
 
 #include "KDF/Core.h"
 
