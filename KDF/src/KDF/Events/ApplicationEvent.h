@@ -34,6 +34,13 @@ namespace KDF {
 	public:
 		WindowCloseEvent() {}
 
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "WindowCloseEvent";
+			return ss.str();
+		}
+
 		EVENT_CLASS_TYPE(WindowClose)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
