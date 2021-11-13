@@ -13,11 +13,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "KDF/vendor/GLFW/include"
+IncludeDir["Glad"] = "KDF/vendor/Glad/include"
 
 startproject "Sandbox"
 
 
 include "KDF/vendor/GLFW"
+include "KDF/vendor/Glad"
 
 project "KDF"
 	location "KDF"
@@ -40,12 +42,14 @@ project "KDF"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -57,7 +61,8 @@ project "KDF"
 		defines
 		{
 			"KDF_PLATFORM_WINDOWS",
-			"KDF_BUILD_DLL"
+			"KDF_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
