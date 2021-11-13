@@ -37,6 +37,12 @@
     <ClInclude Include="src\KDF\Events\MouseEvent.h">
       <Filter>KDF\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\KDF\Layer.h">
+      <Filter>KDF</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDF\LayerStack.h">
+      <Filter>KDF</Filter>
+    </ClInclude>
     <ClInclude Include="src\KDF\Log.h">
       <Filter>KDF</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp">
+      <Filter>KDF</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDF\Layer.cpp">
+      <Filter>KDF</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDF\LayerStack.cpp">
       <Filter>KDF</Filter>
     </ClCompile>
     <ClCompile Include="src\KDF\Log.cpp">

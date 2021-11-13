@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -109,6 +110,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -135,6 +137,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -157,6 +160,8 @@
     <ClInclude Include="src\KDF\Events\Event.h" />
     <ClInclude Include="src\KDF\Events\KeyEvent.h" />
     <ClInclude Include="src\KDF\Events\MouseEvent.h" />
+    <ClInclude Include="src\KDF\Layer.h" />
+    <ClInclude Include="src\KDF\LayerStack.h" />
     <ClInclude Include="src\KDF\Log.h" />
     <ClInclude Include="src\KDF\Window.h" />
     <ClInclude Include="src\KDFpch.h" />
@@ -164,6 +169,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp" />
+    <ClCompile Include="src\KDF\Layer.cpp" />
+    <ClCompile Include="src\KDF\LayerStack.cpp" />
     <ClCompile Include="src\KDF\Log.cpp" />
     <ClCompile Include="src\KDFpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
