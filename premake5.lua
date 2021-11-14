@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "KDF/vendor/GLFW/include"
 IncludeDir["Glad"] = "KDF/vendor/Glad/include"
 IncludeDir["ImGui"] = "KDF/vendor/imgui"
+IncludeDir["glm"] = "KDF/vendor/glm"
 
 
 
@@ -40,7 +41,9 @@ project "KDF"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -49,7 +52,8 @@ project "KDF"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -110,7 +114,8 @@ project "Sandbox"
 	includedirs
 	{
 		"KDF/vendor/spdlog/include",
-		"KDF/src"
+		"KDF/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links
