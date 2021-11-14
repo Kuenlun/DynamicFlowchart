@@ -1,5 +1,6 @@
 workspace "DynamicFlowchart"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations
 	{
@@ -16,12 +17,13 @@ IncludeDir["GLFW"] = "KDF/vendor/GLFW/include"
 IncludeDir["Glad"] = "KDF/vendor/Glad/include"
 IncludeDir["ImGui"] = "KDF/vendor/imgui"
 
-startproject "Sandbox"
 
 
-include "KDF/vendor/GLFW"
-include "KDF/vendor/Glad"
-include "KDF/vendor/imgui"
+group "Dependencies"
+	include "KDF/vendor/GLFW"
+	include "KDF/vendor/Glad"
+	include "KDF/vendor/imgui"
+group ""
 
 project "KDF"
 	location "KDF"
@@ -72,7 +74,6 @@ project "KDF"
 		postbuildcommands
 		{
 			("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
-			--("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
 	filter "configurations:Debug"
