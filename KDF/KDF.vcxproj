@@ -159,9 +159,11 @@
     <ClInclude Include="src\KDF\Events\KeyEvent.h" />
     <ClInclude Include="src\KDF\Events\MouseEvent.h" />
     <ClInclude Include="src\KDF\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\KDF\KeyCodes.h" />
     <ClInclude Include="src\KDF\Layer.h" />
     <ClInclude Include="src\KDF\LayerStack.h" />
     <ClInclude Include="src\KDF\Log.h" />
+    <ClInclude Include="src\KDF\MouseButtonCodes.h" />
     <ClInclude Include="src\KDF\Window.h" />
     <ClInclude Include="src\KDFpch.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />

@@ -61,9 +61,6 @@ namespace KDF
 
 			for (Layer* layer : m_layerStack)
 				layer->OnUpdate();
-			
-			auto [x, y] = Input::GetMousePosition();
-			CORE_LOG_TRACE("{0}, {1}", x, y);
 
 			m_window->OnUpdate();
 		}

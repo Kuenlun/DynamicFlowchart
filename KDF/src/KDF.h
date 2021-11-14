@@ -5,6 +5,10 @@
 #include "KDF/Layer.h"
 #include "KDF/Log.h"
 
+#include "KDF/Input.h"
+#include "KDF/KeyCodes.h"
+#include "KDF/MouseButtonCodes.h"
+
 #include "KDF/ImGui/ImGuiLayer.h"
 
 // Entry Point

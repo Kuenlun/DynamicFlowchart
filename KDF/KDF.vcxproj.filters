@@ -67,6 +67,8 @@
     </ClInclude>
     <ClInclude Include="src\KDF\Input.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\KDF\KeyCodes.h" />
+    <ClInclude Include="src\KDF\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp">
