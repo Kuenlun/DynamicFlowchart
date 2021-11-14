@@ -7,8 +7,14 @@
     <Filter Include="KDF\Events">
       <UniqueIdentifier>{9E494ABB-8A01-8C08-F308-6564DFDF26F9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="KDF\ImGui">
+      <UniqueIdentifier>{A4438353-10AE-37CA-59EC-E86FC595151F}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\KDF\Events\MouseEvent.h">
       <Filter>KDF\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\KDF\ImGui\ImGuiLayer.h">
+      <Filter>KDF\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\KDF\Layer.h">
       <Filter>KDF</Filter>
     </ClInclude>
@@ -53,10 +62,14 @@
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp">
       <Filter>KDF</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDF\ImGui\ImGuiLayer.cpp">
+      <Filter>KDF\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\KDF\Layer.cpp">
       <Filter>KDF</Filter>
@@ -71,5 +84,6 @@
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
   </ItemGroup>
 </Project>

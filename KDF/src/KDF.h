@@ -5,5 +5,7 @@
 #include "KDF/Layer.h"
 #include "KDF/Log.h"
 
+#include "KDF/ImGui/ImGuiLayer.h"
+
 // Entry Point
 #include "KDF/EntryPoint.h"
