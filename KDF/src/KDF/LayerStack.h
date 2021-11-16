@@ -8,7 +8,7 @@
 
 namespace KDF {
 
-	class KDF_API LayerStack
+	class LayerStack
 	{
 	public:
 		LayerStack();

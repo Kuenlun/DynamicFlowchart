@@ -12,7 +12,7 @@
 
 namespace KDF {
 
-	class KDF_API Application
+	class Application
 	{
 	public:
 		Application();
