@@ -166,7 +166,6 @@
     <ClInclude Include="src\KDF\MouseButtonCodes.h" />
     <ClInclude Include="src\KDF\Window.h" />
     <ClInclude Include="src\KDFpch.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
@@ -587,6 +586,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp" />
+    <ClCompile Include="src\KDF\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\KDF\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\KDF\Layer.cpp" />
     <ClCompile Include="src\KDF\LayerStack.cpp" />
@@ -594,7 +594,6 @@
     <ClCompile Include="src\KDFpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>

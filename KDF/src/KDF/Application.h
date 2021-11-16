@@ -7,6 +7,7 @@
 #include "KDF/Events/Event.h"
 #include "KDF/Events/ApplicationEvent.h"
 
+#include "KDF/ImGui/ImGuiLayer.h"
 
 
 namespace KDF {
@@ -31,6 +32,7 @@ namespace KDF {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_running = true;
 		LayerStack m_layerStack;
 	private:
