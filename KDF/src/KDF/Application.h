@@ -11,6 +11,7 @@
 
 // TEMPORARY
 #include "KDF/Renderer/Shader.h"
+#include "KDF/Renderer/Buffer.h"
 
 
 namespace KDF {
@@ -39,8 +40,10 @@ namespace KDF {
 		bool m_running = true;
 		LayerStack m_layerStack;
 
-		unsigned int m_vertexArray, m_vertexBuffer, m_indexBuffer;
+		unsigned int m_vertexArray;
 		std::unique_ptr<Shader> m_shader;
+		std::unique_ptr<VertexBuffer> m_VertexBuffer;
+		std::unique_ptr<IndexBuffer> m_IndexBuffer;
 
 	private:
 		static Application* s_instance;
