@@ -5,7 +5,7 @@
 #include "KDF/Events/MouseEvent.h"
 #include "KDF/Events/KeyEvent.h"
 
-#include <Glad/glad.h>
+#include "Platform/OpenGL/OpenGLContext.h"
 
 
 namespace KDF {
@@ -48,10 +48,9 @@ namespace KDF {
 		}
 
 		m_window = glfwCreateWindow((int)props.Width, (int)props.Height, m_data.Title.c_str(), nullptr, nullptr);
-		glfwMakeContextCurrent(m_window);
 
-		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		KDF_CORE_ASSERT(status, "Failed to initialize Glad");
+		m_context = new OpenGLContext(m_window);
+		m_context->Init();
 
 		glfwSetWindowUserPointer(m_window, &m_data);
 		SetVSync(true);
@@ -154,7 +153,7 @@ namespace KDF {
 	void WindowsWindow::OnUpdate()
 	{
 		glfwPollEvents();
-		glfwSwapBuffers(m_window);
+		m_context->SwapBuffers();
 	}
 
 	void WindowsWindow::SetVSync(bool enabled)

@@ -9,6 +9,9 @@
 
 #include "KDF/ImGui/ImGuiLayer.h"
 
+// TEMPORARY
+#include "KDF/Renderer/Shader.h"
+
 
 namespace KDF {
 
@@ -35,6 +38,10 @@ namespace KDF {
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_running = true;
 		LayerStack m_layerStack;
+
+		unsigned int m_vertexArray, m_vertexBuffer, m_indexBuffer;
+		std::unique_ptr<Shader> m_shader;
+
 	private:
 		static Application* s_instance;
 	};

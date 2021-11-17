@@ -1,6 +1,7 @@
 #pragma once
 
 #include "KDF/Window.h"
+#include "KDF/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>
 
@@ -30,6 +31,7 @@ namespace KDF {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_window;
+		GraphicsContext* m_context;
 
 		struct WindowData
 		{
