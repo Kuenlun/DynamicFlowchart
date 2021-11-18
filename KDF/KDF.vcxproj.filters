@@ -13,8 +13,14 @@
     <Filter Include="src\KDF\ImGui">
       <UniqueIdentifier>{7BA53D93-E765-B9C9-B0A0-02471C20FEA5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\KDF\Renderer">
+      <UniqueIdentifier>{57DE1EC1-43D7-3D13-6C09-239858611D1F}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\OpenGL">
+      <UniqueIdentifier>{35A49437-A105-7245-2A73-B8F796D3A804}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform\Windows">
       <UniqueIdentifier>{5B054582-4794-CE4B-F0B2-E246DC20DFF1}</UniqueIdentifier>
@@ -87,11 +93,29 @@
     <ClInclude Include="src\KDF\MouseButtonCodes.h">
       <Filter>src\KDF</Filter>
     </ClInclude>
+    <ClInclude Include="src\KDF\Renderer\Buffer.h">
+      <Filter>src\KDF\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDF\Renderer\GraphicsContext.h">
+      <Filter>src\KDF\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDF\Renderer\Renderer.h">
+      <Filter>src\KDF\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDF\Renderer\Shader.h">
+      <Filter>src\KDF\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\KDF\Window.h">
       <Filter>src\KDF</Filter>
     </ClInclude>
     <ClInclude Include="src\KDFpch.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsInput.h">
       <Filter>src\Platform\Windows</Filter>
@@ -1344,12 +1368,6 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
-    <ClInclude Include="src\KDF\Renderer\GraphicsContext.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
-    <ClInclude Include="src\KDF\Renderer\Shader.h" />
-    <ClInclude Include="src\KDF\Renderer\Buffer.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
-    <ClInclude Include="src\KDF\Renderer\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp">
@@ -1370,8 +1388,23 @@
     <ClCompile Include="src\KDF\Log.cpp">
       <Filter>src\KDF</Filter>
     </ClCompile>
+    <ClCompile Include="src\KDF\Renderer\Buffer.cpp">
+      <Filter>src\KDF\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDF\Renderer\Renderer.cpp">
+      <Filter>src\KDF\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDF\Renderer\Shader.cpp">
+      <Filter>src\KDF\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\KDFpch.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Platform\Windows</Filter>
@@ -1379,10 +1412,5 @@
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
-    <ClCompile Include="src\KDF\Renderer\Shader.cpp" />
-    <ClCompile Include="src\KDF\Renderer\Buffer.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
-    <ClCompile Include="src\KDF\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>

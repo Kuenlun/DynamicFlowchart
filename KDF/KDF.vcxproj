@@ -588,12 +588,12 @@
     <ClCompile Include="src\KDF\Layer.cpp" />
     <ClCompile Include="src\KDF\LayerStack.cpp" />
     <ClCompile Include="src\KDF\Log.cpp" />
-    <ClCompile Include="src\KDFpch.cpp">
-      <PrecompiledHeader>Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="src\KDF\Renderer\Buffer.cpp" />
     <ClCompile Include="src\KDF\Renderer\Renderer.cpp" />
     <ClCompile Include="src\KDF\Renderer\Shader.cpp" />
+    <ClCompile Include="src\KDFpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
