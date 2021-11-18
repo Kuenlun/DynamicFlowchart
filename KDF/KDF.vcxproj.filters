@@ -1370,6 +1370,9 @@
     </ClInclude>
     <ClInclude Include="src\KDF\Renderer\VertexArray.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+    <ClInclude Include="src\KDF\Renderer\RendererAPI.h" />
+    <ClInclude Include="src\KDF\Renderer\RenderCommand.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp">
@@ -1416,5 +1419,8 @@
     </ClCompile>
     <ClCompile Include="src\KDF\Renderer\VertexArray.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+    <ClCompile Include="src\KDF\Renderer\RendererAPI.cpp" />
+    <ClCompile Include="src\KDF\Renderer\RenderCommand.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
   </ItemGroup>
 </Project>
