@@ -140,8 +140,6 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\KDF\Renderer\RenderCommand.h" />
-    <ClInclude Include="src\KDF\Renderer\RendererAPI.h" />
     <ClInclude Include="src\KDF.h" />
     <ClInclude Include="src\KDF\Application.h" />
     <ClInclude Include="src\KDF\Core.h" />
@@ -159,7 +157,10 @@
     <ClInclude Include="src\KDF\MouseButtonCodes.h" />
     <ClInclude Include="src\KDF\Renderer\Buffer.h" />
     <ClInclude Include="src\KDF\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\KDF\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\KDF\Renderer\RenderCommand.h" />
     <ClInclude Include="src\KDF\Renderer\Renderer.h" />
+    <ClInclude Include="src\KDF\Renderer\RendererAPI.h" />
     <ClInclude Include="src\KDF\Renderer\Shader.h" />
     <ClInclude Include="src\KDF\Renderer\VertexArray.h" />
     <ClInclude Include="src\KDF\Window.h" />
@@ -587,7 +588,6 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\KDF\Renderer\RendererAPI.cpp" />
     <ClCompile Include="src\KDF\Application.cpp" />
     <ClCompile Include="src\KDF\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\KDF\ImGui\ImGuiLayer.cpp" />
@@ -595,13 +595,15 @@
     <ClCompile Include="src\KDF\LayerStack.cpp" />
     <ClCompile Include="src\KDF\Log.cpp" />
     <ClCompile Include="src\KDF\Renderer\Buffer.cpp" />
-    <ClCompile Include="src\KDF\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\KDF\Renderer\OrthographicCamera.cpp" />
     <ClCompile Include="src\KDF\Renderer\RenderCommand.cpp" />
+    <ClCompile Include="src\KDF\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\KDF\Renderer\RendererAPI.cpp" />
     <ClCompile Include="src\KDF\Renderer\Shader.cpp" />
+    <ClCompile Include="src\KDF\Renderer\VertexArray.cpp" />
     <ClCompile Include="src\KDFpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\KDF\Renderer\VertexArray.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />

@@ -13,6 +13,8 @@
 #include "KDF/Renderer/Shader.h"
 #include "KDF/Renderer/Buffer.h"
 
+#include "KDF/Renderer/OrthographicCamera.h"
+
 
 namespace KDF {
 
@@ -45,6 +47,8 @@ namespace KDF {
 
 		std::shared_ptr<Shader> m_BlueShader;
 		std::shared_ptr<VertexArray> m_SquareVA;
+
+		OrthographicCamera m_Camera;
 
 	private:
 		static Application* s_Instance;
