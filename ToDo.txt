@@ -1,0 +1,5 @@
+Objects:
+	Squares, Circles, Ellipses...
+	Stroke, Fill
+World:
+	BackGroundColor, Grid, Units
