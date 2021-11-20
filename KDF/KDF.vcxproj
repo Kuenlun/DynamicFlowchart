@@ -143,6 +143,7 @@
     <ClInclude Include="src\KDF.h" />
     <ClInclude Include="src\KDF\Application.h" />
     <ClInclude Include="src\KDF\Core.h" />
+    <ClInclude Include="src\KDF\Core\Timestep.h" />
     <ClInclude Include="src\KDF\EntryPoint.h" />
     <ClInclude Include="src\KDF\Events\ApplicationEvent.h" />
     <ClInclude Include="src\KDF\Events\Event.h" />

@@ -1384,6 +1384,7 @@
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
     <ClInclude Include="src\KDF\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\KDF\Core\Timestep.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KDF\Application.cpp">

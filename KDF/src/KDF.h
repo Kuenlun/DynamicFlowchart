@@ -5,6 +5,8 @@
 #include "KDF/Layer.h"
 #include "KDF/Log.h"
 
+#include "KDF/Core/Timestep.h"
+
 #include "KDF/Input.h"
 #include "KDF/KeyCodes.h"
 #include "KDF/MouseButtonCodes.h"

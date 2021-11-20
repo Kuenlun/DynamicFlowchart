@@ -1,6 +1,7 @@
 #pragma once
 
 #include "KDF/Core.h"
+#include "KDF/Core/Timestep.h"
 #include "KDF/Events/Event.h"
 
 
@@ -14,7 +15,7 @@ namespace KDF {
 
 		virtual void OnAttach() {}
 		virtual void OnDetach() {}
-		virtual void OnUpdate() {}
+		virtual void OnUpdate(Timestep ts) {}
 		virtual void OnImGuiRender() {}
 		virtual void OnEvent(Event& event) {}
 
